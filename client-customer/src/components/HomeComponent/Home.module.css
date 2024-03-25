@@ -1,0 +1,27 @@
+.productContainer {
+    margin: 10px;
+    border: 1px solid #000000; /* Add border or other styling if needed */
+    border-radius: 8px;
+    overflow: hidden; /* Ensure content doesn't overflow */
+    display: inline-block;
+  }
+  
+  /* Styles for the figure */
+  .figure {
+    text-align: center;
+  }
+  
+  /* Styles for the image */
+  .figure img {
+    width: 300px; /* Make the image fill the container */
+    height: 300px; /* Maintain aspect ratio */
+    border-bottom: 1px solid #000000; /* Add border or other styling if needed */
+  }
+  
+  /* Styles for the figcaption */
+  .figcaption {
+    margin-top: 10px;
+    font-size: 16px;
+    text-align: center;
+  }
+  

@@ -1,0 +1,225 @@
+/* styles.css */
+.body-customer {
+  width: 1150px;
+  height: fit-content;
+  margin: 0px auto;
+}
+.body-admin {
+  width: fit-content;
+  height: fit-content;
+  margin: 0px auto;
+}
+
+
+.align-center {
+  width: fit-content;
+  margin: 0px auto;
+}
+div.inline {
+  display: inline-block;
+}
+
+
+/* menu.css */
+div.border-bottom {
+  border-bottom: 1px solid black;
+  padding: 10px 0px 10px 0px;
+}
+div.float-left {
+  float: left;
+
+}
+div.float-right {
+  float: right;
+}
+div.float-clear {
+  clear: both;
+}
+ul.menu {
+  margin: 0px;
+  padding: 0px;
+
+}
+li.menu {
+  display: inline;
+  margin-right: 20px;
+  text-transform: uppercase;
+
+}
+
+form.search {
+  margin: 0px;
+
+}
+
+input.keyword {
+  width: 180px;
+}
+/* datatable.css */
+
+
+
+
+
+
+
+/* Style for notifications overlay */
+.notifications-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999; /* Ensure it is above other elements */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* Notification--------------------------------------------------------------------- */
+/* Style for notifications container */
+.notifications-container {
+  position: absolute;
+  top: calc(50px + 10px); /* Adjust the top value based on your design */
+  right: 20px; /* Adjust the right value based on your design */
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 400px;
+  max-width: 400px;
+  width: 400px;
+  overflow-y: auto;
+  max-height: 80vh; /* Keep it reasonable in size and scrollable */
+  z-index: 9999;
+}
+
+/* Style for each notification item */
+.notification-item {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+
+/* Hover effect for notification item */
+.notification-item:hover {
+  background-color: #00ee48;
+}
+
+/* Style for the close button */
+.notifications-container button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+.c-red {
+  color: red; /* hoặc màu đỏ của bạn mong muốn */
+}
+.right-positioned {
+  position: absolute;
+  top: 16%;
+  right: 15%;
+}
+
+
+/* Notification--------------------------------------------------------------------- */
+
+
+
+/* Hiện đăng xuất my order hàng dọc----------------------------------- */
+
+.profile-container {
+  position: relative;
+  display: inline-block;
+}
+
+.profile-links {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ccc;
+  padding: 8px;
+  z-index: 1;
+}
+
+.profile-links a {
+  display: block;
+  padding: 5px;
+  text-decoration: none;
+  color: #333;
+}
+
+.profile-links a:hover {
+  background-color: #0ab63e;
+}
+
+/* Hiện đăng xuất my order hàng dọc----------------------------------- */
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-image {
+  max-width: 100px; /* Adjust the width as needed */
+  margin-right: 10px; /* Adjust the margin as needed */
+}
+.form-switch{
+  display: inline;
+
+}
+
+
+@media only screen and (max-width: 768px) {
+  .body-customer {
+    width: 80%;
+    height: fit-content;
+    margin: 0px auto;
+  }
+  .form-switch{
+    display: none;
+  }
+}
+
+
+
+
+
+/* menu.css */
+
+
+
+.footer{
+  width: 100%;
+  height: auto;
+  background-color: black;
+  display: flex;
+  color: aliceblue;
+
+}
+.footer-1 {
+  width: 50%;
+  height: 100%;
+  margin-top: 15px;
+  border-right: 1px solid whitesmoke;
+
+}
+.footer-2 {
+  margin-top: 40px;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+

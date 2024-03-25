@@ -1,0 +1,154 @@
+/* Default styles for larger screens */
+.productContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px;
+  border: 1px solid #000000;
+  border-radius: 8px;
+}
+
+.mainInfo {
+  padding: 50px;
+  align-items: center;
+  display: inline;
+}
+
+.mainImage {
+  width: 450px;
+  height: 450px;
+  border: 1px solid #000000;
+  border-radius: 8px;
+}
+
+.thumbnailContainer {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px 0 0 10px;
+  margin-top: 20px;
+  border: 1px solid #000000;
+}
+
+.thumbnailImage {
+  width: 100px;
+  height: 100px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  border: none;
+}
+
+.thumbnailImage.active {
+  border: 2px solid red;
+}
+
+.productDetailsContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-right: 5%;
+  width: 500px;
+}
+
+.productForm {
+  margin-left: 20px;
+}
+
+.productTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.submitButton {
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+.addToCart {
+  background-color: #4caf50;
+}
+
+.addToFavorite {
+  background-color: #c01d1d;
+}
+
+.submitButton:hover {
+  background-color: #45a049;
+}
+
+.addToFavorite:hover {
+  background-color: #890909;
+}
+
+.select {
+  margin-left: 10px;
+  padding: 2px;
+}
+
+.input {
+  margin-left: 13px;
+  max-width: 50px;
+  padding: 2px;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+  .productContainer { 
+    flex-direction: column; 
+    width: 320px;
+  }
+
+  .mainInfo {
+    padding: 20px; 
+  }
+
+  .mainImage {
+    width: 250px; /* Make the main image full-width on smaller screens */
+    height: auto; /* Allow the height to adjust proportionally */
+  }
+
+  .thumbnailContainer {
+   /* Adjust padding for smaller screens */
+    display: flex;
+    flex-direction: column; /* Stack thumbnails vertically on smaller screens */
+    align-items: center; /* Center items horizontally on smaller screens */
+  }
+
+  .thumbnailImage {
+    width: 150px; /* Make thumbnail images full-width on smaller screens */
+    height: auto; /* Allow the height to adjust proportionally */
+    margin-right: 0; /* Remove margin between thumbnails */
+    margin-bottom: 0; /* Remove margin between thumbnails */
+
+  }
+
+  .productDetailsContainer {
+    width: 100%; /* Make the product details container full-width on smaller screens */
+    margin-right: 0; /* Remove right margin on smaller screens */
+  }
+
+  .productForm {
+    margin-left: 0; /* Remove left margin on smaller screens */
+  }
+
+  .submitButton,
+  .addToCart,
+  .addToFavorite {
+    width: 100%; /* Make buttons full-width on smaller screens */
+  }
+
+  .select,
+  .input {
+    margin-left: 0; /* Remove left margin on smaller screens */
+  }
+}
